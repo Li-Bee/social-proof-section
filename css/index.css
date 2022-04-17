@@ -145,6 +145,10 @@ main {
   .third {
     width: 44.5rem;
   }
+  
+  .first {
+    margin-top: 1.8rem;
+  }
 
   .second {
     margin-left: 4.6rem;
@@ -199,6 +203,7 @@ main {
 
 .quote {
   font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.69;
   letter-spacing: -0.232143px;
 }
