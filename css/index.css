@@ -209,6 +209,16 @@ main {
     gap: 3rem;
   }
 
+  .testimonial {
+    border-radius: 8px;
+  }
+
+  .colton,
+  .irene,
+  .anne {
+    height: 23.4rem;
+  }
+
   .irene {
     margin-top: 1.6rem;
   }
