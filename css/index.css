@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+/* CSS reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #927b91;
+
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+main {
+  padding: 8rem 2.4rem 9.9rem 2.4rem;
+}
+
+/* done on 16px basis */
+@media screen and (min-width: 72rem) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+
+  main {
+    padding: 12.7rem 16.5rem 10rem 16.5rem;
+  }
+}
+
+/* Header */
+
+.heading-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -1.14px;
+  color: #512051;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.heading-description {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 72rem) {
+  .header-review-container {
+    display: flex;
+    gap: 12.5rem;
+  }
+
+  .heading-title {
+    font-size: 4.8rem;
+    letter-spacing: -1.71px;
+    text-align: left;
+    width: 44.5rem;
+  }
+
+  .heading-description {
+    text-align: left;
+    width: 44.5rem;
+    margin-bottom: 7.2rem;
+  }
+}
+
+/* Review section */
+
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 4.9rem;
+}
+
+.review {
+  background-color: #f7f2f7;
+  padding: 1.6rem 6.1rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.review-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.845rem;
+}
+
+.review-text {
+  text-align: center;
+  margin-top: 1.623rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #512051;
+}
+
+@media screen and (min-width: 72rem) {
+  .review {
+    flex-direction: row;
+    gap: 3.245rem;
+    align-items: center;
+    padding: 2rem 6rem 2rem 3rem;
+  }
+
+  .first,
+  .second,
+  .third {
+    width: 44.5rem;
+  }
+
+  .second {
+    margin-left: 4.6rem;
+  }
+
+  .third {
+    margin-left: 9.3rem;
+  }
+
+  .review-text {
+    margin-top: 0;
+  }
+}
+
+/* Testiomonial section */
+
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.testimonial {
+  padding: 4rem 3.2rem 3.2rem 3.2rem;
+  color: #fff;
+  background-color: #512051;
+}
+
+.buyer {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  margin-bottom: 2.7rem;
+}
+
+/* apply border radius to picture not the div */
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.verified {
+  color: #ee69a4;
+  font-size: 1.3rem;
+}
+
+.quote {
+  font-size: 1.3rem;
+  line-height: 1.69;
+  letter-spacing: -0.232143px;
+}
+
+@media screen and (min-width: 72rem) {
+  .section-testimonials {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .irene {
+    margin-top: 1.6rem;
+  }
+
+  .anne {
+    margin-top: 3.2rem;
+  }
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
